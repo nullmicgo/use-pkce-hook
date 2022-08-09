@@ -1,0 +1,41 @@
+{
+  "name": "use-pkce",
+  "version": "1.0.0",
+  "description": "React Customer Hook for PKCE(Proof Key for Code Exchange)",
+  "author": {
+    "name": "nullmicgo",
+    "email": "nullmicgo@gmail.com",
+    "url": "https://twitter.com/nullmicgo"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "pkce",
+    "oauth2"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "bump": "npm version",
+    "example": "cd example && yarn install && yarn package",
+    "prepublishOnly": "yarn build",
+    "watch": "nodemon --watch src --exec \"yarn build\""
+  },
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nullmicgo/use-pkce-hook"
+  },
+  "bugs": {
+    "url": "https://github.com/nullmicgo/use-pkce-hook/issues"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "nodemon": "^2.0.12"
+  }
+}
